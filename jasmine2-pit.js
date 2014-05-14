@@ -5,7 +5,7 @@ global.pit = function pit(specName, promiseBuilder) {
   var jasmineEnv = jasmine.getEnv()
   var spec = jasmineEnv.it(specName, function runIt(done) {
     var promise = promiseBuilder()
-    if(!promise || typeof promise.then === 'undefined') {
+    if(!promise || typeof promise.then !== 'function') {
       spec.addExpectationResult(false, {matcherName: 'jasmine.pit.requirePromise',
                                         passed: false,
                                         message: 'Did not recieve a promise from jasmine.pit',
