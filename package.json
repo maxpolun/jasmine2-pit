@@ -1,9 +1,22 @@
 {
   "name": "jasmine2-pit",
   "version": "0.1.0",
-  "author": "Max Polun",
+  "description": "Run tests on promises using jasmine2 or minijasminenode",
+  "author": {
+    "name": "Max Polun",
+    "email": "maxpolun@gmail.com",
+    "url": "https://github.com/maxpolun"
+  },
+  "repository": "maxpolun/jasmine2-pit",
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "licence": "ISC",
   "main": "jasmine2-pit.js",
+  "scripts": {
+    "test": "grunt spec"
+  },
+  "keywords": ["polunware", "promise", "jasmine"],
   "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.2"
