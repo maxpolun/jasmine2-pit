@@ -1,0 +1,16 @@
+{
+  "name": "jasmine2-pit",
+  "version": "0.0.0",
+  "author": "Max Polun",
+  "licence": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.2"
+    ,"eslint-grunt": "^0.4.1"
+    ,"grunt-concurrent": "~0.4.3"
+    ,"grunt-contrib-watch": "^0.5.3"
+    ,"grunt-node-inspector": "^0.1.2" 
+    ,"bluebird": "^1.0.0"
+    ,"minijasminenode": "^0.4.0"
+  }
+}
