@@ -13,6 +13,11 @@ describe('pit', function(){
     expect(true).toBeTruthy()
   })
   xpit('xpit should be pending', function(){})
+  pit('should show the stack trace when an error is thrown', function(){
+    return new Promise(function(){
+      throw new Error('error')
+    })
+  })
   describe('expectations in succeeding promises', function(){
     pit('it should pass with passing expectations', function(){
       return Promise.resolve('promise').then(function(result){

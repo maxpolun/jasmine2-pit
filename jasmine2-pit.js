@@ -15,12 +15,15 @@
                                           expected: true})
         done()
       } else {
-        return promise.then(done, function runPromise(err){
-          spec.addExpectationResult(false, {matcherName: 'jasmine.pit', 
+        return promise.then(function doneNoArgs(){
+          done()
+        }, function runPromise(err){
+          spec.addExpectationResult(false, {matcherName: 'jasmine.pit',
                                             passed: false,
-                                            message: err,
+                                            message: err.message || JSON.stringify(err),
                                             actual: null,
-                                            expected: true})
+                                            expected: true,
+                                            error: err})
           done()
         })
       }
@@ -33,5 +36,5 @@
   }
 
 })(typeof module !== 'undefined' && module.exports ? // are we in node?
-    global : 
+    global :
     window)
