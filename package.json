@@ -16,15 +16,19 @@
   "scripts": {
     "test": "grunt spec"
   },
-  "keywords": ["polunware", "promise", "jasmine"],
+  "keywords": [
+    "polunware",
+    "promise",
+    "jasmine"
+  ],
   "dependencies": {},
   "devDependencies": {
-    "grunt": "^0.4.2"
-    ,"eslint-grunt": "^0.4.1"
-    ,"grunt-concurrent": "~0.4.3"
-    ,"grunt-contrib-watch": "^0.5.3"
-    ,"grunt-node-inspector": "^0.1.2" 
-    ,"bluebird": "^1.0.0"
-    ,"minijasminenode": "^0.4.0"
+    "bluebird": "^2.0.0",
+    "eslint-grunt": "^0.4.1",
+    "grunt": "^0.4.2",
+    "grunt-concurrent": "~0.4.3",
+    "grunt-contrib-watch": "^0.5.3",
+    "grunt-node-inspector": "^0.1.2",
+    "minijasminenode2": "^1.0.0"
   }
 }

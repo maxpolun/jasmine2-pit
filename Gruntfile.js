@@ -70,10 +70,10 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-node-inspector')
   grunt.loadNpmTasks('grunt-concurrent')
-  
+
   grunt.registerMultiTask('spec', 'Run node jasmine specs', function(){
     var done = this.async();
-    var jasmineLib = require('minijasminenode');
+    var jasmineLib = require('minijasminenode2');
     this.data.specs = grunt.file.expand(this.data.specs)
     this.data.onComplete = done
     jasmineLib.executeSpecs(this.data)
