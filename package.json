@@ -1,6 +1,6 @@
 {
   "name": "jasmine2-pit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Run tests on promises using jasmine2 or minijasminenode",
   "author": {
     "name": "Max Polun",
